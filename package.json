@@ -8,6 +8,7 @@
     "dev:public": "vite --host 0.0.0.0",
     "build": "vite build",
     "build:github": "vite build --base=/chatgpt-web/",
+    "deploy": "npx gh-pages -d dist",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "tauri": "tauri",
@@ -28,6 +29,7 @@
     "eslint-config-standard-with-typescript": "^34.0.1",
     "eslint-plugin-svelte3": "^4.0.0",
     "flourite": "^1.2.3",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "sass": "^1.60.0",
     "svelte": "^3.58.0",
@@ -39,8 +41,5 @@
     "tslib": "^2.5.0",
     "typescript": "^5.0.3",
     "vite": "^4.1.0"
-  },
-  "dependencies": {
-    "gh-pages": "^5.0.0"
   }
 }

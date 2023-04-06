@@ -11,6 +11,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
   // Only run PurgeCSS in production builds
   if (command === 'build') {
     return {
+      base: "/chatgpt-web",
       plugins,
       css: {
         postcss: {
@@ -25,6 +26,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     }
   } else {
     return {
+      base: "/chatgpt-web",
       plugins
     }
   }
